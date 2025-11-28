@@ -10,7 +10,10 @@ matplotlib==3.8.2
 seaborn==0.13.0
 PyPDF2==3.0.1
 pydantic==2.5.0
+# python-multipart often conflicts with 'multipart'. 
+# Ensure you don't have 'multipart' installed.
 python-multipart==0.0.6
 webdriver-manager==4.0.1
 openai-whisper
-ffmpeg
+# ffmpeg-python is the correct wrapper if you need to call ffmpeg from code
+ffmpeg-python
